@@ -11,7 +11,7 @@ hostname = "akop.dev"
 [[params.social]]
 key = 0
 name = "github"
-url = "https://github.com/akopkesheshyan"
+url = "https://github.com/akopdev"
 
 [[params.social]]
 key = 1
