@@ -1,0 +1,29 @@
+baseURL = 'https://akop.dev/'
+languageCode = 'en-us'
+title = 'Backend Software Engineer'
+theme = 'rose-pine'
+
+[params]
+author = "Akop Kesheshyan"
+user = "hello"
+hostname = "akop.dev"
+
+[[params.social]]
+key = 0
+name = "github"
+url = "https://github.com/akopkesheshyan"
+
+[[params.social]]
+key = 1
+name = "twitter"
+url = "https://twitter.com/akopdev"
+
+[[params.social]]
+key = 2
+name = "linkedin"
+url = "https://www.linkedin.com/in/akopdev"
+
+[[params.social]]
+key = 3
+name = "email"
+url = "mailto:hello@akop.dev"
