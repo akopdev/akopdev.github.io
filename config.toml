@@ -4,9 +4,14 @@ title = 'Backend Software Engineer'
 theme = 'rose-pine'
 
 [params]
+contentTypeName = "notes"
 author = "Akop Kesheshyan"
 user = "blog"
 hostname = "akop.dev"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
 
 [[params.social]]
 key = 0
