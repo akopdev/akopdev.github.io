@@ -1,11 +1,11 @@
-baseURL = 'https://akop.dev/'
+baseURL = 'https://blog.akop.dev/'
 languageCode = 'en-us'
 title = 'Backend Software Engineer'
 theme = 'rose-pine'
 
 [params]
 author = "Akop Kesheshyan"
-user = "hello"
+user = "blog"
 hostname = "akop.dev"
 
 [[params.social]]
@@ -27,3 +27,14 @@ url = "https://www.linkedin.com/in/akopdev"
 key = 3
 name = "email"
 url = "mailto:hello@akop.dev"
+
+[menu]
+  [[menu.header]]
+    name = "notes"
+    weight = 0
+    url = "notes"
+
+  [[menu.header]]
+    name = "about"
+    weight = 1
+    url = "about"
