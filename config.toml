@@ -4,7 +4,6 @@ title = 'Backend Software Engineer'
 theme = 'rose-pine'
 
 [params]
-contentTypeName = "notes"
 author = "Akop Kesheshyan"
 user = "blog"
 hostname = "akop.dev"
