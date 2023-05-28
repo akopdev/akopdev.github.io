@@ -10,7 +10,6 @@ One way to fix this issue is by using the `select_related` and `prefetch_related
 These methods allow you to specify which related data should be fetched in a single database query, reducing the number of queries needed.
 
 ```python 
-
 from django.db import models
 
 class Author(models.Model):
@@ -29,7 +28,6 @@ for book in books:
 books = Book.objects.select_related('author').all()
 for book in books:
     print(book.author.name)”
-
 ```
 
 `select_related` is used for one-to-one and many-to-one relationships while `prefetch_related` is used for one-to-many and many-to-many relationships.
