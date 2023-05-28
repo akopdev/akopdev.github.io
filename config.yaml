@@ -1,0 +1,35 @@
+baseURL: 'https://blog.akop.dev/'
+languageCode: 'en-us'
+title: 'Backend Software Engineer'
+theme: 'rose-pine'
+
+params:
+  author: "Akop Kesheshyan"
+  user: "blog"
+  hostname: "akop.dev"
+  social:
+    - name: "github"
+      url: "https://github.com/akopdev"
+    - name: "twitter"
+      url: "https://twitter.com/akopdev"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/akopdev"
+    - name: "email"
+      url: "mailto:hello@akop.dev"
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+markup:
+  highlight:
+    style: "rose-pine"
+
+menu:
+  header:
+    - name: "notes"
+      weight: 0
+      url: "notes"
+    - name: "about"
+      weight: 1
+      url: "about"

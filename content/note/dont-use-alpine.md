@@ -3,9 +3,12 @@ title: "Don’t use alpine as a base image for python apps"
 date: 2023-05-21T23:06:36+02:00
 tags: ["docker", "python"]
 ---
+
+## Main reasons
+
 ### 1. Not supporting DNS-over-TCP
 
-`musl` (an implementation of C standard library) doesn't support DNS-over-TCP. 
+`Musl` (an implementation of C standard library) doesn't support DNS-over-TCP. 
 As a result it may suddenly starts throwing "Unknown Host" exceptions randomly, 
 anytime when some external network change causes the resolution of some particular 
 domain to require more than the 512 bytes available in a single UDP packet.
@@ -26,7 +29,7 @@ Similar issues can also happen in other languages. For example, Node.js uses add
 which are written in C++ and compiled with node-gyp, these will depend on C libraries and,
 therefore, on glibc. 
 
-## What to Use Instead alpine?
+## What to use instead alpine?
 
 The biggest appeal of Alpine is its small size, so if you really care about that, then 
 `Wolfi`[^1] (is just 12MB) or `Distroless`[^2] are good choices.

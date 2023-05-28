@@ -17,14 +17,17 @@ services:
 	frontend: 
 		image: frontend 
 		profiles: ["frontend"] 
+
 	phpmyadmin: 
 		image: phpmyadmin 
 		depends_on: 
 			- db 
 		profiles: 
 			- debug 
+
 	backend: 
 		image: backend 
+
 	db: 
 		image: mysql
 ```
@@ -40,7 +43,7 @@ automatically started.
 
 ## Enabling profiles
 
-To enable a profile supply the `--profile` command-line option or use the COMPOSE_PROFILES environment variable:
+To enable a profile supply the `--profile` command-line option or use the `COMPOSE_PROFILES` environment variable:
 
 ```sh
 $ docker compose --profile debug up
