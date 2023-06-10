@@ -27,7 +27,7 @@ for book in books:
 
 books = Book.objects.select_related('author').all()
 for book in books:
-    print(book.author.name)”
+    print(book.author.name)
 ```
 
 `select_related` is used for one-to-one and many-to-one relationships while `prefetch_related` is used for one-to-many and many-to-many relationships.
