@@ -14,22 +14,22 @@ Services are associated with profiles through the profiles attribute which takes
 ```yaml
 version: "3.9"
 services: 
-	frontend: 
-		image: frontend 
-		profiles: ["frontend"] 
+  frontend: 
+    image: frontend 
+    profiles: ["frontend"] 
 
-	phpmyadmin: 
-		image: phpmyadmin 
-		depends_on: 
-			- db 
-		profiles: 
-			- debug 
+  phpmyadmin: 
+    image: phpmyadmin 
+    depends_on: 
+      - db 
+    profiles: 
+      - debug 
 
-	backend: 
-		image: backend 
+  backend: 
+    image: backend 
 
-	db: 
-		image: mysql
+  db: 
+    image: mysql
 ```
 
 Here the services `frontend` and `phpmyadmin` are assigned to the profiles `frontend` and `debug` 
@@ -46,8 +46,8 @@ automatically started.
 To enable a profile supply the `--profile` command-line option or use the `COMPOSE_PROFILES` environment variable:
 
 ```sh
-$ docker compose --profile debug up
-$ COMPOSE_PROFILES=debug docker compose up
+docker compose --profile debug up
+COMPOSE_PROFILES=debug docker compose up
 ```
 
 The above command would both start your application with the debug profile enabled. Using the docker-compose.yml file above, this would start the services backend, db and phpmyadmin.
@@ -55,6 +55,6 @@ The above command would both start your application with the debug profile enabl
 Multiple profiles can be specified by passing multiple --profile flags or a comma-separated list for the COMPOSE_PROFILES environment variable:
 
 ```sh 
-$ docker compose --profile frontend --profile debug up
-$ COMPOSE_PROFILES=frontend,debug docker compose up
+docker compose --profile frontend --profile debug up
+COMPOSE_PROFILES=frontend,debug docker compose up
 ```
