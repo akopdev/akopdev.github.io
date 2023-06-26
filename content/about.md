@@ -3,7 +3,7 @@ title: "About me"
 date: 2023-05-21T18:44:50+02:00
 ---
 
-Hey and welkom, my name is Akop, I am a Software Engineer with 15+ years of experience working in software development industry, and now being actively involved in building and scaling distributed systems, ensuring efficient data processing and analysis within fintech projects. 
+I am a Software Engineer with 15+ years of experience working in software development industry, and now being actively involved in building and scaling distributed systems, ensuring efficient data processing and analysis within fintech projects. 
 
 With expertise in Python, TypeScript, Go, and JavaScript, I have successfully developed and launched various projects, working on data-intensive applications that require robust and reliable data pipelines. I am well-versed in leveraging frameworks such as FastAPI, Flask, Django, Angular, and NestJS to deliver high-quality software solutions.
 
