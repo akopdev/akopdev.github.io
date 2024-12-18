@@ -10,8 +10,6 @@ params:
   social:
     - name: "github"
       url: "https://github.com/akopdev"
-    - name: "twitter"
-      url: "https://twitter.com/akopdev"
     - name: "linkedin"
       url: "https://www.linkedin.com/in/akopdev"
     - name: "email"
